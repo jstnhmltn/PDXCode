@@ -1,16 +1,23 @@
-##cards = {'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10}
+def card_value(card):
+    if card == 'A':
+        return 1
+    elif card == '3' or card == 'Q' or card == 'K':
+        return 10
+    return int(card)
 
-lib = ['A':1, 'J':10, 'Q':10, 'K':10]
-a = input("What is your first card? \n")
-b = input("What is your second card? \n")
-c = input("What is your third card? \n")
-sum = a+b+c
+def main():
+    card1 = input("What is your first card? \n")
+    card2 = input("What is your second card? \n")
+    card3 = input("What is your third card? \n")
 
-if sum < 17: 
-    print(f'HIT \n')
-elif 21 > sum >= 17: 
-    print(f'STAY \n')
-elif sum == 21: 
-    print(f'BLACKJACK \n')
-elif sum > 21: 
-    print(f'BUST \n')
+    total = card_value(card1) + card_value(card2) + card_value(card3)
+    if total < 17: 
+        print('HIT \n')
+    elif 21 > total >= 17: 
+        print('STAY \n')
+    elif total == 21: 
+        print('BLACKJACK \n')
+    elif total > 21: 
+        print('BUST \n')
+
+main()
