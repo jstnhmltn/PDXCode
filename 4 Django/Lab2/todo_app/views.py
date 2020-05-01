@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from todo_app.models import Todo
 
-def home(request):
-    return render(request, 'main/index.html')
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Hello, world.")
