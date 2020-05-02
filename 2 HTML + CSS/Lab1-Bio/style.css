@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1, h2, h3 {
+    color: rgb(159, 185, 40);
+    text-align: center;
+  }
+  
+  p {
+    font-family: geneva;
+    font-size: 20px;
+  }
