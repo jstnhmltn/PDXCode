@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorten URLs</title>
+</head>
+<body>
+    <h1> SHORTEN URLs</h1>
+    <form action="{% url 'process' %}" method="POST">
+        {% csrf_token %}
+        <label for="URL">URL </label>
+        <input type="long_url"/>
+        <button type="submit">submit</button>
+      </form>
+</body>
+</html>
