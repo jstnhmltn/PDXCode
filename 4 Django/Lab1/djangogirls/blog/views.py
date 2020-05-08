@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render, get_object_or_404
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
+from django.http import HttpResponseRedirect
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -19,7 +20,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_list', pk=post.pk)
+            return redirect('post_list')
     else:
         form = PostForm()
     return render(request, 'post_edit.html', {'form': form})
