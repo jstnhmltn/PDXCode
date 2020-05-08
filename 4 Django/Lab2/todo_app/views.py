@@ -16,11 +16,11 @@ def addTodo(request):
     if form.is_valid():
         new_todo = Todo(text=request.POST['text'])
         new_todo.save()
-    return redirect('index.html')
+    return redirect('index')
 
 def completeTodo(request, todo_id):
     todo = Todo.objects.get(pk=todo_id)
-    todo.complete = True
+    todo.is_complete = True
     todo.save()
     return redirect('index')
 
