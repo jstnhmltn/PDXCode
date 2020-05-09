@@ -1,5 +1,11 @@
+from django.conf.urls import url
 from django.urls import path
+from . import views
 
-from .views import redirect_view
+app_name = 'lab3_app'
 
-urlpatterns = [path('<slug:tiny>/', view=redirect_view, name='short_url_view
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('', views.redirect, name='redirect'),
+    path('', views.save_url, name='save_url'),
+]

@@ -1,5 +1,8 @@
 from django.db import models
 from django.conf.urls import url
 
-def get_absolute_url(self):
-    return reverse_lazy('blog_page', args=[self.slug])
+from django.db import models
+
+class Shorten(models.Model):
+    long_url = models.CharField(max_length=200)
+    short_url = models.CharField(max_length=200)
