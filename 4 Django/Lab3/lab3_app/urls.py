@@ -6,6 +6,5 @@ app_name = 'lab3_app'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('', views.redirect, name='redirect'),
     path('', views.save_url, name='save_url'),
 ]
