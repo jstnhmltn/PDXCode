@@ -8,11 +8,13 @@
 </head>
 <body>
     <h1> SHORTEN URLs </h1>
-    <form>
+    <form action="http://localhost:8000/" method="POST">
         {% csrf_token %}
-        <label for="URL">URL </label>
-        <input type="long_url"/>
+        <input type="text" name="long_url"/>
         <button type="submit">submit</button>
     </form>
+    {% for url in urls %}
+        <h2>short_url</h2>
+    {% endfor %}
 </body>
 </html>
