@@ -1,4 +1,4 @@
-# Capstone Proposal
+# Capstone Proposal 1 
 
 ## Project Name Ideas:
 
