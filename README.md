@@ -5,7 +5,7 @@
 - Hit the ground running hard here throughout the first few weeks.  Learning programming concepts and fundamentals.  Still need to work on some of the labs to include the use of functions and classes.  Also, need to go through just to make sure the issues are worked out with the functionality of each lab and versions.
 
 ## HTML and CSS:
-- Followed along with several tutorials.  Currently following the Jekyll tutorial to develop a Portfolio page that is hosted by Github. THe link is jstnhmltn/github.io.  As of now, this just prints a 'Hello World' page.
+- Followed along with several tutorials.  Currently following the Jekyll tutorial to develop a Portfolio page that is hosted by Github. THe link is [jstnhmltn/github.io].  Dont expect much. As of now, this is just a 'Hello World' page.
 - Ive messed around with HTML and CSS from some previous courses and honestly not my strongest passion.  However, I do understand the importance of being able to captivate an audience with a nice UI and "pretty" fonts, images, animations, color schemes... 
 
 ## Django:
