@@ -19,4 +19,4 @@
 
 *made this markdown file just to take a break from trying to understand the routing and queries needed for Django* 
 
-***this document is alive
+*this document is alive*
