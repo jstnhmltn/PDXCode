@@ -1,8 +1,16 @@
+#from django.contrib.auth.models import User, Group, Permission # new from docs
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
 # import the Todo model from the models file
 from .models import Todo
+
+def login(request):
+    pass
+
+def register(request):
+    pass
 
 # view to get all of the todos from the database and send them to the 'todos/list.html' view
 def todo_list(request):
@@ -24,6 +32,7 @@ def details(request, id):
 
 
 # view add a todo to the database. this view handles both GET and POST HTTP requests
+@login_required
 def add_todo(request):
     if request.method == 'GET': # if its a GET request, just display the todos/add.html template
         return render(request, 'todos/add.html')
@@ -41,17 +50,20 @@ def add_todo(request):
 
 
 # view to remove a specific todo from the database specified by its id
+@login_required
 def remove_todo(request, id):
     todo = Todo.objects.get(id = id)
     todo.delete()
     return redirect('list')
 
 # helper function for updating a todo. gets the todo info specified by the id and redirects to its detail page
+@login_required
 def update_todo(request, id):
     todo = Todo.objects.get(id = id)
     return redirect('details', todo.id)
 
 # view to update a todo in the databse specified by its id
+@login_required
 def update(request, id):
     todo = Todo.objects.get(id = id)
     if request.method == 'GET':
@@ -68,6 +80,7 @@ def update(request, id):
 
 
 # mark a todo as done
+@login_required
 def mark_done(request, id):
     todo = Todo.objects.get(id = id)
     todo.status = True
