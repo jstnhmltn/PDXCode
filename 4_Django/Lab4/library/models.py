@@ -8,3 +8,4 @@ class Book(models.Model):
     author_last_name = models.CharField(max_length=30)
     author_first_name = models.CharField(max_length=30)
     is_available = models.BooleanField(default=True)
+
