@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon pick6.js"
+    "start": "nodemon Lab1-pick6.js"
   },
   "keywords": [],
   "author": "",

@@ -1,13 +1,12 @@
 let ticket = [];
 let winner = [];
 let match = 0;
-let x = 0;
 
 function win_pick6() {
     for (i=0; i<6; i++) {
         winner.push(Math.floor(Math.random() * 100));
         }   
-    console.log("win ticket", winner);
+    console.log("win  ticket", winner);
 }
 win_pick6();
 
@@ -28,7 +27,7 @@ function matches() {
     }
     console.log("number of matches", match);
 }
-matches(match);
+matches();
 
 /*
 function play100k() {
