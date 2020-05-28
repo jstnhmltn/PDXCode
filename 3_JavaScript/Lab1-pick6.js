@@ -1,23 +1,36 @@
-function pick6() {
-    let winner = [];
+let ticket = [];
+let winner = [];
+let match = 0;
+let x = 0;
+
+function win_pick6() {
     for (i=0; i<6; i++) {
         winner.push(Math.floor(Math.random() * 100));
         }   
-    console.log(winner);
+    console.log("win ticket", winner);
 }
-pick6();
+win_pick6();
 
-/*function matches(ticket, winner) {
-    let payout = [0, 4, 7, 100, 50000, 1000000, 25000000];
-    let matches = 0;
+function tix_pick6() {
     for (i=0; i<6; i++) {
-        if (ticket[i] === winner[i]) {
-            matches++;
-        }
-    console.log(payout[matches]);
-    }
+        ticket.push(Math.floor(Math.random() * 100));
+        }   
+    console.log("user ticket", ticket);
 }
+tix_pick6();
 
+function matches() {
+    //let payout = [0, 4, 7, 100, 50000, 1000000, 25000000];
+    for (i=0; i<6; ++i) {
+        if (ticket[i] === winner[i]) {
+            match++;
+        }
+    }
+    console.log("number of matches", match);
+}
+matches(match);
+
+/*
 function play100k() {
     winner = pick6();
     bal = 0;
