@@ -1,15 +1,15 @@
 # Capstone Proposal -  justin hamilton
 ## Project Name Ideas:
 
-**Collage Maker**
+****
 
 ## Project Overview
 
-*AN IMAGE GALLERY*
+*A BLOG SITE/IMAGE GALLERY* 
 
 ## Functionality
 
-- Build a web application that allows users to upload images and have them displayed as a slideshow, puzzle, or collage
+- Build a web application that allows users to create an account,  upload images and videos, create blog posts, rate other blog posts, list their favorite places on Google Maps.
 
 - User can set images to **public** or **private**
 
@@ -19,7 +19,7 @@
 1. Multiple Users
     - Take in user information to store in sqlite3 db
 2. User Authentication
-    - Use a *custom user model* or a *django user model* to authenticate users and manage permissions
+    - Use a *django user model* to authenticate users and manage permissions
 3. User Homepage
     - The authenticated users have ability to upload images for the puzzle generator, collage-maker and slideshow
 4. Main page
@@ -41,7 +41,7 @@
 
 ### WEEK THREE:
 - Full functionality. Successful navigation using links
-- Integrate ideas
+- Integrate new ideas
 - Troubleshoot
 
 ### WEEK FOUR:
