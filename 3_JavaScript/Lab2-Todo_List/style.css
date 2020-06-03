@@ -1,0 +1,26 @@
+#outside {
+    margin: auto;
+}
+
+#todo_input {
+    border-width: 5px;
+}
+
+#completed_list {
+    text-decoration: line-through;
+}
+
+button {
+    padding: 5px;
+    background-color: olivedrab;
+    color: black;
+}
+
+button:hover {
+    color: red;
+}
+
+button:active {
+    outline: solid 10px;
+    color: olivedrab;
+}
