@@ -2,6 +2,10 @@
     margin: auto;
 }
 
+#head {
+    color: maroon;
+}
+
 #todo_input {
     border-width: 5px;
 }
