@@ -16,3 +16,6 @@ def contact(request):
 
 def news(request):
     pass
+
+def register(request):
+    pass
