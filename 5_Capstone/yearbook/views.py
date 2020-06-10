@@ -6,7 +6,7 @@ from .models import Upload
 
 # Create your views here.
 def home(request):
-    return HttpResponse
+    return render(request, 'home.html', context={})
 
 def about(request):
     pass
