@@ -5,17 +5,17 @@ from django.contrib.auth.decorators import login_required
 from .models import Upload
 
 # Create your views here.
-def home(request):
-    return render(request, 'home.html', context={})
+def index(request):
+    return render(request, 'index.html', context={})
 
 def about(request):
-    pass
+    return render(request, 'about.html', context={})
 
 def contact(request):
-    pass
+    return render(request, 'contact.html', context={})
 
 def news(request):
-    pass
+    return render(request, 'news.html', context={})
 
 def register(request):
-    pass
+    return render(request, 'reqister.html', context={})
