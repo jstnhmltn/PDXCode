@@ -32,5 +32,9 @@ p {
 }
 
 .img-box {
+  width: 150px;
+}
+
+.img-box img {
   display: block;
 }
