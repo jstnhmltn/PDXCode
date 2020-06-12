@@ -18,4 +18,4 @@ def news(request):
     return render(request, 'news.html', context={})
 
 def register(request):
-    return render(request, 'reqister.html', context={})
+    return render(request, 'register.html', context={})

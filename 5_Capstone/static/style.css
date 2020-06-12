@@ -1,3 +1,4 @@
+/* nav bar */
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -22,15 +23,18 @@
   color: white;
 }
 
+/* footer nav bar */
 .footer {
   background-color: #333;
   overflow: hidden;
 }
 
+
 p {
   color: whitesmoke;
 }
 
+/*background image */
 .img-box img {
   display: block;
 }
