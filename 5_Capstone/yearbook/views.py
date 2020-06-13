@@ -6,16 +6,10 @@ from .models import Upload
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html', context={})
-
-def about(request):
-    return render(request, 'about.html', context={})
+    return render(request, 'index.html')
 
 def contact(request):
-    return render(request, 'contact.html', context={})
-
-def news(request):
-    return render(request, 'news.html', context={})
+    return render(request, 'contact.html')
 
 def register(request):
-    return render(request, 'register.html', context={})
+    return render(request, 'register.html')
