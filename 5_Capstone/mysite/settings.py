@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'journal',
     'showcase',
     'django.contrib.admin',
     'django.contrib.auth',
