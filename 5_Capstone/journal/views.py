@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from blog.forms import CommentForm
-from blog.models import Post, Comment
+from journal.forms import CommentForm
+from journal.models import Post, Comment
 
 # Create your views here.
 def journal_index(request):
