@@ -6,5 +6,5 @@ from .models import Upload
 
 # Create your views here.
 def base(request):
-    return render(request, 'base.html')
+    return render(request, 'base.html', {})
 
