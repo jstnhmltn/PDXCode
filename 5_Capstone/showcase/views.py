@@ -5,12 +5,12 @@ from .models import Upload
 
 # Create your views here.
 def showcase_index(request):
-    project = Upload.objects.all()
-    context = {"projects": project}
+    p1 = Upload.objects.all()
+    context = {"upload": upload}
     return render(request, "showcase_index.html", context)
 
 
 def showcase_detail(request, pk):
-    project = Upload.objects.get(pk=pk)
-    context = {"project": project}
+    upload = Upload.objects.get(pk=pk)
+    context = {"upload": upload}
     return render(request, "showcase_detail.html", context)
