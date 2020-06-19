@@ -8,7 +8,6 @@ def showcase_index(request):
     context = {'uploads': uploads}
     return render(request, 'showcase_index.html', context)
 
-
 def showcase_detail(request, pk):
     upload = Upload.objects.get(pk=pk)
     context = {'upload': upload}
