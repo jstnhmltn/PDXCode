@@ -3,13 +3,13 @@
 {% block page_content %}
 <h1>Showcase</h1>
 <div class="row">
-{% for showcase in showcases %}
+{% for upload in uploads %}
     <div class="col-md-4">
         <div class="card mb-2">
             <img class="card-img-top" src="{% static Upload.image %}">
             <div class="card-body">
-                <h5 class="card-title">{{ Upload.title }}</h5>
-                <p class="card-text">{{ Upload.description }}</p>
+                <h5 class="card-title">{{ upload.title }}</h5>
+                <p class="card-text">{{ upload.description }}</p>
                 <a href="{% url 'showcase_detail' Upload.pk %}"
                    class="btn btn-primary">Read More
                 </a>

@@ -1,4 +1,4 @@
 from django.apps import AppConfig
 
-class YearbookConfig(AppConfig):
-    name = 'yearbook'
+class ShowcaseConfig(AppConfig):
+    name = 'showcase'
