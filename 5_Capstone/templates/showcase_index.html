@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block page_content %}
 <h1>Showcase</h1>
@@ -6,16 +7,16 @@
 {% for upload in uploads %}
     <div class="col-md-4">
         <div class="card mb-2">
-            <img class="card-img-top" src="{% static Upload.image %}">
+            <img class="card-img-top">{{ upload.image }}</img>
             <div class="card-body">
                 <h5 class="card-title">{{ upload.title }}</h5>
                 <p class="card-text">{{ upload.description }}</p>
-                <a href="{% url 'showcase_detail' Upload.pk %}"
+                <a href="{% url 'showcase_detail' upload.pk %}"
                    class="btn btn-primary">Read More
                 </a>
             </div>
         </div>
     </div>
-    {% endfor %}
+{% endfor %}
 </div>
 {% endblock %}
