@@ -35,8 +35,8 @@
 - Configure a layout of django views necessary for admin/user functionality
 
 ### WEEK TWO:
-- Develop custom user model or develop **django.contrib.auth.users** model
-- Configure views based on user model type (class-based views or function-based views)
+- Develop **django.contrib.auth.users** model
+- Configure views based on user model type (function-based views)
 - Choose a color scheme and typography for the HTML/CSS
 
 ### WEEK THREE:
