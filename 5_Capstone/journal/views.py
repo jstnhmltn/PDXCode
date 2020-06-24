@@ -26,3 +26,6 @@ def journal_detail(request, pk):
 
     context = {"post": post, "comments": comments, "form": form}
     return render(request, "journal_detail.html", context)
+
+def journal_post():
+    pass

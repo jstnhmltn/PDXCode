@@ -4,7 +4,7 @@
 <div class="col-md-8 offset-md-2">
     <h1>Journal Index</h1>
     {% for post in posts %}
-    <h2><a href="{% url 'journal_detail' %}">{{ post.title }}</a></h2>
+    <h2><a href="{% url 'journal_detail' post.pk %}">{{ post.title }}</a></h2>
     <small>
         {{ post.created_on.date }}
     </small>
