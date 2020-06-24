@@ -1,5 +1,5 @@
 from django.contrib.auth import login, authenticate
-# from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.views import LoginView, LogoutView
 from django.shortcuts import render, redirect
 from .forms import SignUpForm
 
@@ -17,8 +17,12 @@ def register(request):
         form = SignUpForm()
     return render(request, 'register.html', {'form': form})
 
-def login(request):
-    return render(request, 'login.html')
 
 def dashboard(request):
     return render(request, 'dashboard.html')
+
+def LoginView(request):
+    return render(request, 'login.html')
+    
+def LogoutView(request):
+    return redirect('showcase_index')

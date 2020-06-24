@@ -7,7 +7,16 @@ class SignUpForm(UserCreationForm):
     first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
     last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
     email = forms.EmailField(max_length=254, help_text='Required: Valid Email Address.')
-
+    username = forms.CharField(max_length=30, required=True)
+    
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2', )
+
+# class LogInForm(user.Users):
+#     username = forms.CharField(max_length=)
+#     password1 = 
+
+#     class Meta:
+#         model = User
+#         fields = ('username', 'password1')
