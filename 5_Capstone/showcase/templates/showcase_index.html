@@ -12,7 +12,11 @@
                     <p class="card-text">{{ upload.upload_date }}<br>{{ upload.description }}</p>
                     <a href="{% url 'showcase_detail' upload.pk %}"
                     class="btn btn-primary">
-                        Read More
+                        Comments
+                    </a>
+                    <a href="{% url 'showcase_detail' upload.pk %}"
+                    class="btn btn-primary">
+                        Actions
                     </a>
                 </div>
             </div>
