@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 from .models import Upload
 
-    
 def showcase_index(request):
     uploads = Upload.objects.all()
     context = {'uploads': uploads}
