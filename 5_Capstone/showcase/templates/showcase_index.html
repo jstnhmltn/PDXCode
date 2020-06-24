@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
-<h1>Uploads</h1>
+<h1>Recent Uploads</h1>
 <div class="row">
-    {% for upload in uploads %}
+    {% for upload in uploads reversed %}
         <div class="col-md-4">
             <div class="card mb-2">
                 <img class="img-thumbnail" src="{{ upload.image.url }}" alt="{{ upload.title }}" height="200" max-width="100%">
                 <div class="card-body">
                     <h5 class="card-title">{{ upload.title }}</h5>
-                    <p class="card-text">{{ upload.description }}</p>
+                    <p class="card-text">{{ upload.upload_date }}<br>{{ upload.description }}</p>
                     <a href="{% url 'showcase_detail' upload.pk %}"
                     class="btn btn-primary">
                         Read More
