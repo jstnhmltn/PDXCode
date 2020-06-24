@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 from .models import Upload
 
@@ -12,5 +13,8 @@ def showcase_detail(request, pk):
     context = {'upload': upload}
     return render(request, 'showcase_detail.html', context)
 
-def showcase_post():
-    pass
+# @ login_required
+# def showcase_post(request, pk):
+#     upload = Upload.objects.new(pk=pk)
+#     context = {'upload': upload}
+#     return render(request, 'showcase_post.html,')
