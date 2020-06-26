@@ -2,13 +2,11 @@
 {% load static %}
 {% block page_content %}
 
-<h1>DASHBOARD</h1>
-
-<h2>{{ user.get_full_name }}</h2>
+<h2>{{ user.get_full_name }}'s DASHBOARD</h2>
 <ul>
   <li>Username: {{ user.username }}</li>
-  <li>Location: {{ user.profile.location }}</li>
-  <li>Birth Date: {{ user.profile.birth_date }}</li>
-  <li>E-Mail: {{user.profile.email }}</li>
+  <li>Location: {{ user.location }}</li>
+  <li>Birth Date: {{ user.birthdate }}</li>
+  <li>E-Mail: {{ user.email }}</li>
 </ul>
 {% endblock %}

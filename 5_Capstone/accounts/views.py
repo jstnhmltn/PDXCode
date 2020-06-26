@@ -17,7 +17,6 @@ def register(request):
         form = SignUpForm()
     return render(request, 'register.html', {'form': form})
 
-
 def dashboard(request):
     return render(request, 'dashboard.html')
 
