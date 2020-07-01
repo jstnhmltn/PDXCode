@@ -6,6 +6,7 @@ class Upload(models.Model):
     description = models.TextField(max_length = 100)
     upload_date = models.DateTimeField(auto_now_add = True)
     image = models.ImageField(null=True, upload_to='img/', verbose_name='title')
+    # video = models.ImageField(null=True, upload_to='vids/', verbose_name='title')
 
     def __str__(self):
         return self.title
