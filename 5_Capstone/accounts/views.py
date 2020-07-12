@@ -24,4 +24,4 @@ def LoginView(request):
     return render(request, 'login.html')
     
 def LogoutView(request):
-    return redirect('showcase_index')
+    return redirect(request, 'login.html')

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+<!-- {% load static %} -->
 {% block page_content %}
 <h1>{{ upload.title }}</h1>
 <div class="row">
@@ -7,7 +7,12 @@
         <img src="{{ upload.image.url }}" class="card-img-top" alt="{{ upload.title }}">
     </div>
     <div class="col-md-4">
-        <h5>What folks are saying:</h5>
+        <h5>About the content</h5>
+        <strong>{{ upload.title }}</strong>
+        <br>
+        Uploaded on {{ upload.upload_date }}<br>
+        {{ upload.description }}
+        <!-- <h5>What folks are saying:</h5> -->
         <!-- <p>{{ comment }}</p> -->
     </div>
 </div>
